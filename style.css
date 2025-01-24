@@ -5,7 +5,7 @@
     --font-semi: 600;
 
     --first-color: #4070F4;
-    --second-color: #256a92;
+    --second-color: #1db995;
     background-color: #04041f;
 
     --body-font: 'Poppins', sans-serif;
@@ -96,13 +96,18 @@ img {
     margin-right: var(--mb2);
 }
 
+.home-img img {
+    margin-top: -40px; /* Adjust this value as needed */
+}
+
+
 .l-header {
     width: 100%;
     position: fixed;
     top: 0;
     left: 0;
     z-index: var(--z-fixed);
-    background-color: #ffffff;
+    background-color:#101042;
     box-shadow: 0 1px 4px rgba(146, 161, 176, .15);
 }
 
