@@ -1,0 +1,47 @@
+/* Basic reset */
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Splash Screen */
+.splash-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1a2b3c; /* Dark blue background */
+    color: #F5F5F5; /* Soft white text */
+    font-size: 50px;
+    font-family: Arial, sans-serif;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+}
+
+/* Main content initially hidden */
+.main-content {
+    display: none;
+    text-align: center;
+    padding: 50px;
+}
+
+/* When text animation finishes, hide splash screen and show main content */
+.fade-out {
+    animation: fadeOut 1s forwards;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
